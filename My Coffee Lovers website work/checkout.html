@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Coffee Lovers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Media.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h2>Customize Your Coffee</h2>
+            <hr>
+            <form class="checkout-form">
+                <label for="coffee">Select Coffee:</label>
+                <select id="coffee">
+                    <option value="Espresso" data-price="2.50">Espresso - $2.50</option>
+                    <option value="Latte" data-price="3.50">Latte - $3.50</option>
+                    <option value="Cappuccino" data-price="3.00">Cappuccino - $3.00</option>
+                    <option value="Americano" data-price="2.00">Americano - $2.00</option>
+                    <option value="Mocha" data-price="4.00">Mocha - $4.00</option>
+                    <option value="Flat White" data-price="3.75">Flat White - $3.75</option>
+                    <option value="Macchiato" data-price="3.25">Macchiato - $3.25</option>
+                    <option value="Hot Chocolate" data-price="3.00">Hot Chocolate - $3.00</option>
+                </select>
+
+                <label for="milk">Select Milk:</label>
+                <select id="milk">
+                    <option value="Whole Milk" data-price="0.50">Whole Milk - $0.50</option>
+                    <option value="Semi Skimmed Milk" data-price="0.50">Semi Skimmed Milk - $0.50</option>
+                    <option value="Skimmed Milk" data-price="0.50">Skimmed Milk - $0.50</option>
+                    <option value="Oat Milk" data-price="0.75">Oat Milk - $0.75</option>
+                    <option value="Cashew Milk" data-price="0.75">Cashew Milk - $0.75</option>
+                    <option value="Almond Milk" data-price="0.75">Almond Milk - $0.75</option>
+                    <option value="Soya Milk" data-price="0.75">Soya Milk - $0.75</option>
+                </select>
+
+                <label for="flavor">Select Flavor:</label>
+                <select id="flavor">
+                    <option value="None" data-price="0.00">None</option>
+                    <option value="Hazelnut" data-price="0.50">Hazelnut - $0.50</option>
+                    <option value="Caramel" data-price="0.50">Caramel - $0.50</option>
+                    <option value="Chocolate" data-price="0.50">Chocolate - $0.50</option>
+                    <option value="Vanilla" data-price="0.50">Vanilla - $0.50</option>
+                </select>
+
+                <button id="calculate-total" type="button">Calculate Total</button>
+                <p>Total: $<span id="total">0.00</span></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Coffee Lovers | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
